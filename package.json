@@ -1,0 +1,26 @@
+{
+  "name": "shippingmicroservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shippingService.js",
+  "scripts": {
+    "start": "nodemon shippingService.js",
+    "deploy":"firebase deploy --only functions:shipping",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "firebase-functions": "^5.0.0",
+    "@google-cloud/functions": "^3.3.0",
+    "@google-cloud/storage": "^7.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase": "^10.11.1",
+    "firebase-admin": "^12.1.0",
+    "nodemon": "^3.1.0"
+  }
+}
